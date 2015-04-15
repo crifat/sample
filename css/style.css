@@ -158,3 +158,10 @@ dl dd a:hover {}
     margin-top: 60px;
     font-size: 40px;
 }
+#accordion {
+	width: 100%;
+}
+.ui-accordion .ui-accordion-header {
+	font-size: large;
+	font-weight: bold;
+}

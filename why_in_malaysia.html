@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link href='http://fonts.googleapis.com/css?family=Condiment' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tms-0.4.x.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function(){                   
+            $('.slider')._TMS({
+                show:0,
+                pauseOnHover:true,
+                prevBu:false,
+                nextBu:false,
+                playBu:false,
+                duration:1000,
+                preset:'fade',
+                pagination:true,
+                pagNums:false,
+                slideshow:7000,
+                numStatus:true,
+                banners:'fromRight',
+                waitBannerAnimation:false,
+                progressBar:false
+            })  
+            $(function() {
+                $( "#accordion" ).accordion({
+                  collapsible: true,
+                  heightStyle: "content",
+                  event: "click hoverintent"
+                });
+              });    
+        });
+    </script>
+    <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+</head>
+<body>
+  <div class="main">
+  <!--==============================header=================================-->
+    <header>
+        <h1><a href="index.html"><img src="images/logo.png" alt="" class="logo"></a></h1>
+        <div class="logo-text">Falcon Student Consulting</div>
+        <div class="form-search">
+            <form id="form-search" method="post">
+              <input type="text" value="Type here..." onBlur="if(this.value=='') this.value='Type here...'" onFocus="if(this.value =='Type here...' ) this.value=''"  />
+              <a href="#" onClick="document.getElementById('form-search').submit()" class="search_button"></a>
+            </form>
+        </div>   
+        <div class="clear"></div>    
+        <nav class="box-shadow">
+            <div>
+                <ul class="menu">
+                    <li class="home-page"><a href="index.html"><span></span></a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="current"><a href="why_in_malaysia.html">Why Study in Malaysia</a></li>
+                    <li><a href="projects.html">Universities</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+                <div class="social-icons">
+                    <span>Follow us:</span>
+                    <a href="#" class="icon-3"></a>
+                    <a href="#" class="icon-2"></a>
+                    <a href="#" class="icon-1"></a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </nav>
+    </header>   
+  <!--==============================content================================-->
+    <section id="content"><div class="ic"></div>
+        <div id="slide" class="box-shadow">     
+            <div class="slider">
+                <ul class="items">
+                    <li><img src="images/slider-1.jpg" alt="" /><div class="banner">The Next Level of Your Success&nbsp;</div></li>
+                    <li><img src="images/slider-2.jpg" alt="" /><div class="banner">We Offer Different Ways of Problem Solving&nbsp;</div></li>
+                    <li><img src="images/slider-3.jpg" alt="" /><div class="banner">We Craft Practical Solutions&nbsp;</div></li>
+                </ul>
+            </div>  
+        </div>
+        <div class="container_12">
+          <div class="grid_12">
+            <div class="pad-0 border-1">
+                <h2 class="top-1 p0">Why Study in Malaysia</h2>
+                <p class="p2">With more than 30 years of experience in international education, our unique well structured higher education system offers YOU the opportunity to pursue an international qualification at a competitive rate. You can choose from US, UK, Australian or Malaysian academic qualifications designed with flexibility and affordability in mind.
+At the beginning of 2010, there were more than 80,000 international students from more than 100 countries pursuing courses ranging from diplomas, English language course, degree to PhDs at private higher educational institutions, public universities and foreign university branch campuses in Malaysia. The confidence of students across the globe in choosing Malaysia as an international education destination is evident.</p>
+            </div>
+            
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="aside">
+            <div class="container_12">  
+                <div class="grid_12">
+                    <div class="pad-2 block-2 wrap">
+                        Malaysia is the preferred destination of students from around the globe because:
+                        <div id="accordion">
+                          <h3>Trans-national Education & International Affiliations</h3>
+                          <div>
+                            <p>Malaysia is a pioneer in this region in the development and promotion of transnational bachelor's degree program. Since the early 1980s, Malaysia has collaborated with reputable universities from countries like the UK, the US, New Zealand and Australia for internationally recognized qualifications.
+Unique bachelor's degree programmes such as "2+1" twinning degrees and "3+0" degrees offer international students an extensive range of study options that meet their budget and academic needs. Further, students can use this opportunity to experience life as a student in an Asian as well as western setting.</p>
+                          </div>
+                          <h3>"2=1" twinning Degree Programmes – A Value for Money "Cross-Border" Experience</h3>
+                          <div>
+                            <p>The "2+1" undergraduate twinning degree programme is the hallmark of "Studying in Malaysia". Partnering reputable international universities from countries such as UK, Australia, the US, Canada, New Zealand, France as well as Germany, this twinning arrangement to pursue an internationally recognized bachelor's degree programme while gaining valuable experience from two countries.
+The twinning degree arrangement offers substantial saving in tuition fees and other expenses. For example, if you enroll for a "2+1" law twinning degree programme that offers three years of study in Malaysia and one year in UK, you may save up to USD33,000 in tuition fees and living cost compared to when you do the entire 3-year degree in UK.</p>
+                          </div>
+                          <h3>"3+0" Foreign Bachelor's Degree in Malaysia – AN affordable International Qualification</h3>
+                          <div>
+                            <p>A 3+0 foreign bachelor's degree program is an extension of a twinning programme. Under a 3+0 arrangement, bachelor's degree programmes from leading foreign universities are conducted by private higher educational institutions in Malaysia so that students are able to complete their course entirely in Malaysia.
+Since 1998, many established Malaysian private institutions of higher learning have gained the confidence and trust from universities in countries like the UK, Australia, France and the US to allow them to conduct the entire foreign university degree programme in Malaysia. The qualification from these programmes will be awarded by the partner universities. Upon graduation, students can easily pursue their master's degree at the partner university overseas.
+An example of tuition fees for a 3 years UK engineering degree in Malaysia is about USD 16,000 as compared to USD 45,000 in the UK.</p>
+                          </div>
+                          <h3>Foreign University Branch Campuses in Malaysia- The best of the East and West</h3>
+                          <div>
+                            <p>Currently, four international reputable universities such as the Monash University from Australia and the University of Nottingham from the UK have set up their branch campuses in Malaysia to offer bachelor and postgraduate degrees that are identical to that of their main campus overseas.
+By enrolling at any these branch campuses located in Malaysia, you will pay lower tuition fees but will also have the opportunity to spend one or more semesters at the main campus overseas. For example, the tuition fee of a 3 years UK engineering degree is about USD11,600 per year at the Malaysia branch campus as compared to Euro14,500 ( USD 21,700) per year at the UK main campus.</p>
+                          </div>
+                          <h3>Provide the Opportunity to Make International Contacts and to Experience Different Cultures</h3>
+                          <div>
+                            <p>International students will benefit from an "Asian" experience within Malaysia's multiethnic environment. Studying in Malaysia allows you to take acquaintances with international students from all over the world. These experiences and networks will give you a competitive advantage in an evolving globalised world.</p>
+                          </div>
+                          <h3>Low Cost of Living and Affordable Tuition Fees - Everybody Can Study overseas</h3>
+                          <div>
+                            <p>The cost of living for international students studying in Malaysia could be as low as RM12,000 per annum which is approximately USD3,750. As such, the affordable cost of living cost combined with the cheaper tuition fee result in great savings when you choose to study in Malaysia.
+The city of Kualalumpur offers you a high quality lifestyle at a lower cost compared to many other metropolitan cities in the world. Kualalumpur city was rated among the least expensive cities in the world by EXA International in its 2010 survey.</p>
+                          </div>
+                          <h3>English language – An International Language</h3>
+                          <div>
+                            <p>English is used as the primary medium of instruction for all courses conducted at private higher educational institutions. Postgraduate programmes at public universities are in English, which is the second language in Malaysia. 
+Malaysia is an excellent place for international students from non-English speaking countries to learn English. 
+English is widely spoken and studying in Malaysia will help students improve their English.</p>
+                          </div>
+                          <h3>Export-Standard Malaysian Qualifications</h3>
+                          <div>
+                            <p>A growing number of Malaysian private universities have ventured overseas by setting up branches or establishing trans-national arrangements in various Asian countries, Australia, Africa and the UK to offer Malaysian-brand tertiary qualifications.
+This is another testimony of the internationalization effort by Malaysian private higher educational institution offered by them.</p>
+                          </div>
+                          <h3>Quality Education – Assured by Legislation</h3>
+                          <div>
+                            <p>Malaysia is committed to providing quality education. The stringent internal assurance by the universities as well as the Malaysian Qualifications Agency Act 2007 (replacing the National Accreditation Board Act 1996) and Private Higher Education Institutions Act 1996 will ensure is of high standard.</p>
+                          </div>
+                          <h3>Career Relevant Courses with In-Demand Skills – for Greater Employability</h3>
+                          <div>
+                            <p>Most of the higher educational institutions in Malaysia work closely with the industry and foreign partner universities to ensure that the courses offered are up-to-date and market relevant. These career relevant courses which help students develop the knowledge and skills they need at the workplace will enhance their employability when they graduate.</p>
+                          </div>
+                          <h3>Simple and Hassle Free Way to Obtain Student Pass</h3>
+                          <div>
+                            <p>The Malaysia Immigration Department has a simple and hassle free system for international students to gain entry into Malaysia. Obtaining a visa and a student pass for fulltime study in Malaysia is a quick and easy process.
+
+Students can also apply to bring along their spouse or family members while they are studying here.</p>
+                          </div>
+                          <h3>Working While You Study</h3>
+                          <div>
+                            <p>CStudent with a valid student pass are allowed to work in specific sectors. Subject to other immigration requirements, students are allowed to work part-time for a maximum of 20 Hour per week during semester breaks or holidays of more than seven days.</p>
+                          </div>
+                          <h3>Politically Stable and Geographically Safe Country</h3>
+                          <div>
+                            <p>Malaysia is a politically stable and safe country. The country enjoys a tropical climate which is warm and humid throughout the year and is also geographically-safe from major natural disasters.</p>
+                          </div>
+                          <h3>Multi-Ethnic Population – Living Together Harmoniously </h3>
+                          <div>
+                            <p>Besides their academic education, international students will also have the chance to learn about the rich and diverse culture in Malaysia. The multicultural society of Malaysia that and religions living harmoniously is a fine example of a country that promote peace and prosperity. The people of Malaysia are warm, friendly and accommodating – international students will find that they fill fit in to the lifestyle here easily. </p>
+                          </div>
+                          <h3>Malaysia – Gateway to Asia</h3>
+                          <div>
+                            <p>Malaysia is the gateway to Asia. You not only have easy access to the partner countries in Asia but you will also find yourself in Asia while studying here in Malaysia. This is because Malaysia is the bustling meeting point for people from around Asia. You will have the greatest opportunity here to build a good network of friends and business contact made up of people from different Asia countries. You can also learn of the abundance of employment and business opportunities that may exist for you in these Asian countries upon your graduation.</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>  
+    </section> 
+  </div>    
+<!--==============================footer=================================-->
+    <footer>
+        <p>Popular free web templates <a href="http://www.websitetemplatesonline.com/" target="_blank">at www.WebsiteTemplatesOnline.com</a>. <a href="http://www.getjoomlatemplatesfree.com/" title="Joomla Templates for Websites">GetJoomlaTemplatesFree.com</a> - free Joomla themes for websites.</p>
+        <p>© 2012 Global</p>
+        <p><a rel="nofollow" href="http://templatemonster.com/" target="_blank" class="link">Website Template</a> by TemplateMonster.com</p>
+    </footer>       
+</body>
+</html>
